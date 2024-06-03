@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL PARQUEADERO</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <h1>Formulario de registro de vehiculos</h1>
+    <form id="form_registro">
+        <!--Campos del formulario-->
+        <label for="tipo">Tipo  </label>
+        <select id="tipo">
+            <option value="moto">Moto</option>
+            <option value="carro">Carro</option>
+        </select>
+        <br>
+        <label for="placa">Placa</label>
+        <input type="text" id="placa" placeholder="###-###" required>
+        <br>
+
+        <fieldset id="campos" style="display: none;">
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" required>
+            <br>
+    
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" required>
+    
+            <button type="button" id="btnEnviar">Registrar Vehiculo Y entrada
+            </button> 
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
