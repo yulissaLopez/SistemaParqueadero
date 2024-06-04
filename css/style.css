@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     padding: 20px;
-    
 }
 
 h1{
@@ -47,4 +46,50 @@ label {
     margin-bottom: 5px;
     font-weight: bold; 
     color: #333; 
+}
+
+#contTabla{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Estilo para las filas alternas */
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+/* Estilo para la última fila */
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Estilo para las filas al pasar el cursor */
+table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
