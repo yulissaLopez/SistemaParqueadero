@@ -10,4 +10,4 @@ class Vehiculo{
     }
 }
 
-export{ Vehiculo }
+export{ Vehiculo } 

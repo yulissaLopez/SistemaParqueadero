@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const placa = document.getElementById("placa");
     const btnEnviar = document.getElementById("btnEnviar");
     const form = document.getElementById("form_registro");
+    const btnRegUsu = document.getElementById("regUsu");
     //Obtener la referencia de la tabla
     const bodyTabla = document.getElementById("bodyTablaVehiculos");
     //vehiculo de prueba
@@ -71,7 +72,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                     marcaInput.value = lista_vehiculos[indice].marca;
                     modeloInput.value = lista_vehiculos[indice].modelo;
 
-                    alert("El vehiculo ya esta en el Paruqeadero");
+                    alert("El vehiculo ya esta en el Parqueadero");
             }
         }else{
            //si esta mal escrita pasa algo ... 
@@ -86,13 +87,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
         const tipo = document.getElementById("tipo").value;
         const marca = document.getElementById("marca").value;
         const modelo = document.getElementById("modelo").value;
+        const servicio = document.getElementById("servicio").value;
 
         //crear un nuevo vehiculo
         const vehiculo = new Vehiculo(tipo, placa, marca,modelo);
 
         //agregarlo al array de vehiculos
         lista_vehiculos.push(vehiculo);
-        console.log(lista_vehiculos);
+        if(servicio === 'mes'){
+            //llamar al contenedor 
+            const contenedorUsu = document.getElementById("contenedor");
+            contenedorUsu.style.display = "block";
+            
+        }
 
         //funcion que agregue a una tabla
         agregarDatosTabla(vehiculo, bodyTabla);
@@ -101,6 +108,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
         //oculta los campos del form
         campos.style.display = "none";
 
+    })
+
+    btnRegUsu.addEventListener("click", ()=>{
+        
     })
 
 })

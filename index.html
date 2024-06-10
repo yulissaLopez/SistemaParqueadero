@@ -17,6 +17,7 @@
             <option value="carro">Carro</option>
         </select>
         <br>
+        
         <label for="placa">Placa</label>
         <input type="text" id="placa" placeholder="###-###" required>
         <br>
@@ -28,6 +29,13 @@
     
             <label for="modelo">Modelo</label>
             <input type="text" id="modelo" required>
+
+            <label for="servicio">Servicios</label>
+            <select id="servicio">
+                <option value="dia">Dia</option>
+                <option value="hora">Hora</option>
+                <option value="mes">Mensual</option>
+            </select>
     
             <button type="button" id="btnEnviar">Registrar Vehiculo Y entrada
             </button> 
@@ -35,6 +43,26 @@
         </fieldset>
 
     </form>
+
+    <div id="contenedor">
+        <h2>Registro de Usuario</h2>
+        <form id="formUsuario">
+            <div class="form-group">
+                <label for="idUsu">Documento:</label>
+                <input type="idUsu" id="idUsu" name="idUsu" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre de usuario:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="button" id="regUsu">Registrar Usuario</button>
+        </form>
+    </div>
+
 
     <div id="contTabla">
         <table id="tablaVehiculos">
